@@ -71,6 +71,7 @@ body {
     padding-left: 8px;
     padding-top: 10px; }
   .column__gap {
-    margin: 20px 0px; }
+    margin: 20px 0px;
+    height: 10px; }
   .column__row {
     display: flex; }
