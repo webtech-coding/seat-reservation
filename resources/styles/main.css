@@ -43,6 +43,10 @@ html {
 
 .container {
   margin: 50px 0px; }
+  .container__header {
+    text-align: left;
+    padding-bottom: 50px;
+    padding-left: 50px; }
 
 .column {
   display: flex;
