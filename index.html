@@ -9,198 +9,216 @@
 </head>
 <body>
     
-    <h1 class="container">The seat selection</h1>
-    <div class="column">
-        <div class="column__left">
-            <div class="column__row">
-                <div class="column__seat column__letter"></div>
-                <div class="column__seat column__letter">A</div>
-                <div class="column__seat column__letter">B</div>
-                <div class="column__seat column__letter">C</div>
-                <div class="column__seat column__letter">D</div>
-                <div class="column__seat column__letter">E</div>
-            </div>
-            <div class="column__row">
-                <div class="column__seat column__letter">1</div>
-                <div class="column__seat" data-row="1" data-column="A"></div>
-                <div class="column__seat" data-row="1" data-column="B"></div>
-                <div class="column__seat" data-row="1" data-column="C"></div>
-                <div class="column__seat" data-row="1" data-column="D"></div>
-                <div class="column__seat" data-row="1" data-column="E"></div>
-            </div>
-            <div class="column__row">
-                <div class="column__seat column__letter">2</div>
-                <div class="column__seat" data-row="2" data-column="A"></div>
-                <div class="column__seat" data-row="2" data-column="B"></div>
-                <div class="column__seat" data-row="2" data-column="C"></div>
-                <div class="column__seat" data-row="2" data-column="D"></div>
-                <div class="column__seat" data-row="2" data-column="E"></div>
-            </div>
-            <div class="column__row">
-                <div class="column__seat column__letter">3</div>
-                <div class="column__seat" data-row="3" data-column="A"></div>
-                <div class="column__seat" data-row="3" data-column="B"></div>
-                <div class="column__seat" data-row="3" data-column="C"></div>
-                <div class="column__seat" data-row="3" data-column="D"></div>
-                <div class="column__seat" data-row="3" data-column="E"></div>
-            </div>
-            <div class="column__row">
-                <div class="column__seat column__letter">4</div>
-                <div class="column__seat" data-row="4" data-column="A"></div>
-                <div class="column__seat" data-row="4" data-column="B"></div>
-                <div class="column__seat" data-row="4" data-column="C"></div>
-                <div class="column__seat" data-row="4" data-column="D"> </div>
-                <div class="column__seat" data-row="4" data-column="E"></div>
-            </div>
-            <div class="column__row">
-                <div class="column__seat column__letter">5</div>
-                <div class="column__seat" data-row="5" data-column="A"></div>
-                <div class="column__seat" data-row="5" data-column="B"></div>
-                <div class="column__seat" data-row="5" data-column="C"></div>
-                <div class="column__seat" data-row="5" data-column="D"></div>
-                <div class="column__seat" data-row="5" data-column="E"></div>
-            </div>
-            <div class="column__gap">
+    <h1>The seat selection</h1>
+    <div class="container">
+        <div class="column">
+            <div class="column__left">
+                <div class="column__row">
+                    <div class="column__seat column__letter"></div>
+                    <div class="column__seat column__letter">A</div>
+                    <div class="column__seat column__letter">B</div>
+                    <div class="column__seat column__letter">C</div>
+                    <div class="column__seat column__letter">D</div>
+                    <div class="column__seat column__letter">E</div>
+                </div>
+                <div class="column__row">
+                    <div class="column__seat column__letter">1</div>
+                    <div class="column__seat" data-seat="1_A" data-price="16"></div>
+                    <div class="column__seat" data-seat="1_B" data-price="16"></div>
+                    <div class="column__seat" data-seat="1_C" data-price="16"></div>
+                    <div class="column__seat" data-seat="1_D" data-price="16"></div>
+                    <div class="column__seat column__seat--reserved" data-seat="1_E" data-price="16"></div>
+                </div>
+                <div class="column__row">
+                    <div class="column__seat column__letter">2</div>
+                    <div class="column__seat" data-seat="2_A" data-price="16"></div>
+                    <div class="column__seat column__seat--reserved" data-seat="2_B" data-price="16"></div>
+                    <div class="column__seat column__seat--reserved" data-seat="2_C" data-price="16"></div>
+                    <div class="column__seat" data-seat="2_D" data-price="16"></div>
+                    <div class="column__seat" data-seat="2_E" data-price="16"></div>
+                </div>
+                <div class="column__row">
+                    <div class="column__seat column__letter">3</div>
+                    <div class="column__seat" data-seat="3_A" data-price="16"></div>
+                    <div class="column__seat" data-seat="3_B" data-price="16"></div>
+                    <div class="column__seat" data-seat="3_C" data-price="16"></div>
+                    <div class="column__seat" data-seat="3_D" data-price="16"></div>
+                    <div class="column__seat" data-seat="3_E" data-price="16"></div>
+                </div>
+                <div class="column__row">
+                    <div class="column__seat column__letter">4</div>
+                    <div class="column__seat" data-seat="4_A" data-price="16"></div>
+                    <div class="column__seat" data-seat="4_B" data-price="16"></div>
+                    <div class="column__seat column__seat--reserved" data-seat="4_C" data-price="16"></div>
+                    <div class="column__seat" data-seat="4_D" data-price="16"></div>
+                    <div class="column__seat" data-seat="4_E" data-price="16"></div>
+                </div>
+                <div class="column__row">
+                    <div class="column__seat column__letter">5</div>
+                    <div class="column__seat" data-seat="5_A" data-price="16"></div>
+                    <div class="column__seat" data-seat="5_B" data-price="16"></div>
+                    <div class="column__seat" data-seat="5_C" data-price="16"></div>
+                    <div class="column__seat" data-seat="5_D" data-price="16"></div>
+                    <div class="column__seat" data-seat="5_E" data-price="16"></div>
+                </div>
+                <div class="column__gap">
 
+                </div>
+                <div class="column__row">
+                    <div class="column__seat column__letter">6</div>
+                    <div class="column__seat" data-seat="6_A" data-price="20"></div>
+                    <div class="column__seat" data-seat="6_B" data-price="20"></div>
+                    <div class="column__seat" data-seat="6_C" data-price="20"></div>
+                    <div class="column__seat column__seat--reserved" data-seat="6_D" data-price="20"></div>
+                    <div class="column__seat" data-seat="6_E" data-price="20"></div>
+                </div>
+                <div class="column__row">
+                    <div class="column__seat column__letter">7</div>
+                    <div class="column__seat" data-seat="7_A" data-price="20"></div>
+                    <div class="column__seat" data-seat="7_B" data-price="20"></div>
+                    <div class="column__seat" data-seat="7_C" data-price="20"></div>
+                    <div class="column__seat" data-seat="7_D" data-price="20"></div>
+                    <div class="column__seat" data-seat="7_E" data-price="20"></div>
+                </div>
+                <div class="column__row">
+                    <div class="column__seat column__letter">8</div>
+                    <div class="column__seat" data-seat="8_A" data-price="20"></div>
+                    <div class="column__seat" data-seat="8_B" data-price="20"></div>
+                    <div class="column__seat" data-seat="8_C" data-price="20"></div>
+                    <div class="column__seat" data-seat="8_D" data-price="20"></div>
+                    <div class="column__seat" data-seat="8_E" data-price="20"></div>
+                </div>
+            
+                <div class="column__row">
+                    <div class="column__seat column__letter">9</div>
+                    <div class="column__seat" data-seat="9_A" data-price="20"></div>
+                    <div class="column__seat column__seat--reserved" data-seat="9_B" data-price="20"></div>
+                    <div class="column__seat column__seat--reserved" data-seat="9_C" data-price="20"></div>
+                    <div class="column__seat" data-seat="9_D" data-price="20"></div>
+                    <div class="column__seat" data-seat="9_E" data-price="20"></div>
+                </div>
             </div>
-            <div class="column__row">
-                <div class="column__seat column__letter">6</div>
-                <div class="column__seat" data-row="6" data-column="A"></div>
-                <div class="column__seat" data-row="6" data-column="B"></div>
-                <div class="column__seat" data-row="6" data-column="C"></div>
-                <div class="column__seat" data-row="6" data-column="D"></div>
-                <div class="column__seat" data-row="6" data-column="E"></div>
-            </div>
-            <div class="column__row">
-                <div class="column__seat column__letter">7</div>
-                <div class="column__seat" data-row="7" data-column="A"></div>
-                <div class="column__seat" data-row="7" data-column="B"></div>
-                <div class="column__seat" data-row="7" data-column="C"></div>
-                <div class="column__seat" data-row="7" data-column="D"></div>
-                <div class="column__seat" data-row="7" data-column="E"></div>
-            </div>
-            <div class="column__row">
-                <div class="column__seat column__letter">8</div>
-                <div class="column__seat" data-row="8" data-column="A"></div>
-                <div class="column__seat" data-row="8" data-column="B"></div>
-                <div class="column__seat" data-row="8" data-column="C"></div>
-                <div class="column__seat" data-row="8" data-column="D"></div>
-                <div class="column__seat" data-row="8" data-column="E"></div>
-            </div>
-           
-            <div class="column__row">
-                <div class="column__seat column__letter">9</div>
-                <div class="column__seat" data-row="9" data-column="A"></div>
-                <div class="column__seat" data-row="9" data-column="B"></div>
-                <div class="column__seat" data-row="9" data-column="C"></div>
-                <div class="column__seat" data-row="9" data-column="D"></div>
-                <div class="column__seat" data-row="9" data-column="E"></div>
+            <div class="column__right">
+                <div class="column__row">
+                    <div class="column__seat column__letter">F</div>
+                    <div class="column__seat column__letter">G</div>
+                    <div class="column__seat column__letter">H</div>
+                    <div class="column__seat column__letter">I</div>
+                    <div class="column__seat column__letter">J</div>
+                    <div class="column__seat column__letter"></div>
+                </div>
+                <div class="column__row">
+                    <div class="column__seat" data-seat="1_F" data-price="16"></div>
+                    <div class="column__seat" data-seat="1_G" data-price="16"></div>
+                    <div class="column__seat column__seat--reserved" data-seat="1_H" data-price="16"></div>
+                    <div class="column__seat" data-seat="1_I" data-price="16"></div>
+                    <div class="column__seat" data-seat="1_J" data-price="16"></div>
+                    <div class="column__seat column__letter">1</div>
+                </div>
+                <div class="column__row">
+                    <div class="column__seat" data-seat="2_F" data-price="16"></div>
+                    <div class="column__seat" data-seat="2_G" data-price="16"></div>
+                    <div class="column__seat column__seat--reserved" data-seat="2_H" data-price="16"></div>
+                    <div class="column__seat column__seat--reserved" data-seat="2_I" data-price="16"></div>
+                    <div class="column__seat" data-seat="2_J" data-price="16"></div>
+                    <div class="column__seat column__letter">2</div>
+                </div>
+                <div class="column__row">
+                    
+                    <div class="column__seat" data-seat="3_F" data-price="16"></div>
+                    <div class="column__seat" data-seat="3_G" data-price="16"></div>
+                    <div class="column__seat column__seat--reserved" data-seat="3_H" data-price="16"></div>
+                    <div class="column__seat column__seat--reserved" data-seat="3_I" data-price="16"></div>
+                    <div class="column__seat" data-seat="3_J" data-price="16"></div>
+                    <div class="column__seat column__letter">3</div>
+                </div>
+                <div class="column__row">
+                
+                    <div class="column__seat" data-seat="4_F" data-price="16"></div>
+                    <div class="column__seat" data-seat="4_G" data-price="16"></div>
+                    <div class="column__seat" data-seat="4_H" data-price="16"></div>
+                    <div class="column__seat" data-seat="4_I" data-price="16"></div>
+                    <div class="column__seat" data-seat="4_J" data-price="16"></div>
+                    <div class="column__seat column__letter">4</div>
+                </div>
+                <div class="column__row">
+                    
+                    <div class="column__seat" data-seat="5_F" data-price="16"></div>
+                    <div class="column__seat" data-seat="5_G" data-price="16"></div>
+                    <div class="column__seat" data-seat="5_H" data-price="16"></div>
+                    <div class="column__seat" data-seat="5_I" data-price="16"></div>
+                    <div class="column__seat" data-seat="5_J" data-price="16"></div>
+                    <div class="column__seat column__letter">5</div>
+                </div>
+                <div class="column__gap">
+
+                </div>
+                <div class="column__row">
+                
+                    <div class="column__seat" data-seat="6_F" data-price="20"></div>
+                    <div class="column__seat" data-seat="6_G" data-price="20"></div>
+                    <div class="column__seat" data-seat="6_H" data-price="20"></div>
+                    <div class="column__seat" data-seat="6_I" data-price="20"></div>
+                    <div class="column__seat" data-seat="6_J" data-price="20"></div>
+                    <div class="column__seat column__letter">6</div>
+                </div>
+                <div class="column__row">
+                    
+                    <div class="column__seat" data-seat="7_F" data-price="20"></div>
+                    <div class="column__seat" data-seat="7_G" data-price="20"></div>
+                    <div class="column__seat" data-seat="7_H" data-price="20"></div>
+                    <div class="column__seat column__seat--reserved" data-seat="7_I" data-price="20"></div>
+                    <div class="column__seat" data-seat="7_J" data-price="20"></div>
+                    <div class="column__seat column__letter">7</div>
+                </div>
+                <div class="column__row">
+                    
+                    <div class="column__seat" data-seat="8_F" data-price="20"></div>
+                    <div class="column__seat" data-seat="8_G" data-price="20"></div>
+                    <div class="column__seat" data-seat="8_H" data-price="20"></div>
+                    <div class="column__seat" data-seat="8_I" data-price="20"></div>
+                    <div class="column__seat" data-seat="8_J" data-price="20"></div>
+                    <div class="column__seat column__letter">8</div>
+                </div>
+            
+                <div class="column__row">
+                    
+                    <div class="column__seat" data-seat="9_F" data-price="20"></div>
+                    <div class="column__seat column__seat--reserved" data-seat="9_G" data-price="20"></div>
+                    <div class="column__seat" data-seat="9_H" data-price="20"></div>
+                    <div class="column__seat" data-seat="9_I" data-price="20"></div>
+                    <div class="column__seat" data-seat="9_J" data-price="20"></div>
+                    <div class="column__seat column__letter">9</div>
+                </div>
             </div>
         </div>
-        <div class="column__right">
-            <div class="column__row">
-                <div class="column__seat column__letter">F</div>
-                <div class="column__seat column__letter">G</div>
-                <div class="column__seat column__letter">H</div>
-                <div class="column__seat column__letter">I</div>
-                <div class="column__seat column__letter">J</div>
-                <div class="column__seat column__letter"></div>
-            </div>
-            <div class="column__row">
-                <div class="column__seat" data-row="1" data-column="F"></div>
-                <div class="column__seat" data-row="1" data-column="G"> </div>
-                <div class="column__seat" data-row="1" data-column="H"></div>
-                <div class="column__seat" data-row="1" data-column="I"></div>
-                <div class="column__seat" data-row="1" data-column="J"></div>
-                <div class="column__seat column__letter">1</div>
-            </div>
-            <div class="column__row">
-                <div class="column__seat" data-row="1" data-column="F"></div>
-                <div class="column__seat" data-row="1" data-column="G"></div>
-                <div class="column__seat" data-row="1" data-column="H"></div>
-                <div class="column__seat" data-row="1" data-column="I"></div>
-                <div class="column__seat" data-row="1" data-column="J"></div>
-                <div class="column__seat column__letter">2</div>
-            </div>
-            <div class="column__row">
-                
-                <div class="column__seat" data-row="3" data-column="F"></div>
-                <div class="column__seat" data-row="3" data-column="G"></div>
-                <div class="column__seat" data-row="3" data-column="H"></div>
-                <div class="column__seat" data-row="3" data-column="I"></div>
-                <div class="column__seat" data-row="3" data-column="J"></div>
-                <div class="column__seat column__letter">3</div>
-            </div>
-            <div class="column__row">
-               
-                <div class="column__seat" data-row="4" data-column="F"></div>
-                <div class="column__seat" data-row="4" data-column="G"></div>
-                <div class="column__seat" data-row="4" data-column="H"></div>
-                <div class="column__seat" data-row="4" data-column="I"></div>
-                <div class="column__seat" data-row="4" data-column="J"></div>
-                <div class="column__seat column__letter">4</div>
-            </div>
-            <div class="column__row">
-                
-                <div class="column__seat" data-row="5" data-column="F"></div>
-                <div class="column__seat" data-row="5" data-column="G"></div>
-                <div class="column__seat" data-row="5" data-column="H"></div>
-                <div class="column__seat" data-row="5" data-column="I"></div>
-                <div class="column__seat" data-row="5" data-column="J"></div>
-                <div class="column__seat column__letter">5</div>
-            </div>
-            <div class="column__gap">
-
-            </div>
-            <div class="column__row">
-               
-                <div class="column__seat" data-row="6" data-column="F"></div>
-                <div class="column__seat" data-row="6" data-column="G"></div>
-                <div class="column__seat" data-row="6" data-column="H"></div>
-                <div class="column__seat" data-row="6" data-column="I"></div>
-                <div class="column__seat" data-row="6" data-column="J"></div>
-                <div class="column__seat column__letter">6</div>
-            </div>
-            <div class="column__row">
-                
-                <div class="column__seat" data-row="7" data-column="F"></div>
-                <div class="column__seat" data-row="7" data-column="G"></div>
-                <div class="column__seat" data-row="7" data-column="H"></div>
-                <div class="column__seat" data-row="7" data-column="I"></div>
-                <div class="column__seat" data-row="7" data-column="J"></div>
-                <div class="column__seat column__letter">7</div>
-            </div>
-            <div class="column__row">
-                
-                <div class="column__seat" data-row="8" data-column="F"></div>
-                <div class="column__seat" data-row="8" data-column="G"></div>
-                <div class="column__seat" data-row="8" data-column="H"></div>
-                <div class="column__seat" data-row="8" data-column="I"></div>
-                <div class="column__seat" data-row="8" data-column="J"></div>
-                <div class="column__seat column__letter">8</div>
-            </div>
-           
-            <div class="column__row">
-                
-                <div class="column__seat" data-row="9" data-column="F"></div>
-                <div class="column__seat" data-row="9" data-column="G"></div>
-                <div class="column__seat" data-row="9" data-column="H"></div>
-                <div class="column__seat" data-row="9" data-column="I"></div>
-                <div class="column__seat" data-row="9" data-column="J"></div>
-                <div class="column__seat column__letter">9</div>
-            </div>
-        </div>
+        <div class="calculation">
+           <div class="calculation__indicator">
+               <div class="calculation__indicator-box">
+                   <span class="calculation__indicator-box--red"></span><span>Not Available</span>
+               </div>
+               <div class="calculation__indicator-blue">
+                    <span class="calculation__indicator-box--blue"></span><span>Available</span>
+               </div>
+               <div class="calculation__indicator-green">
+                    <span class="calculation__indicator-box--green"></span><span>Your selection</span>
+               </div>
+           </div>
+            <table class="calculation__table">
+                <thead class="calculation__thead">
+                    <th></th>
+                    <th>Seat Number</th>
+                    <th>Price(€)</th>
+                </thead>
+                <tbody class="calculation__tbody">
+                    
+                </tbody>
+            </table>
+           <button class="calculation__button calculation__button--disable">Checkout</button>
+          
         </div>
     </div>
-
-    <div class="balcony">
-        <div class="balcony__left">
-
-        </div>
-        <div class="balcony__right">
-
-        </div>
-    </div>
-    <script src="resources/js/scripts/index.js"></script>
+    <script src="resources/js/scripts/seat_selection.js"></script>
 </body>
+
 </html>

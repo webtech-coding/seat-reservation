@@ -1,17 +1,14 @@
-body{
-    width: 500px;
-    margin: 0 auto;
-}
 
 .container{
-    text-align: center;
     margin: 50px 0px;
-    text-transform: uppercase;
 }
 
 .column{
     display: flex;
     justify-content: space-between;
+    width: 500px;
+    float: left;
+   
 
     &__left{
         display: flex;
@@ -28,11 +25,20 @@ body{
         -webkit-box-shadow: inset 0 0 10px #fff;
         box-shadow:         inset 0 0 10px #fff;
         cursor: pointer;
+
+        &--reserved{
+            background: red;
+            cursor: not-allowed;
+        }
+        &--selection{
+            background: green;
+        }
         
     }
 
     &__letter{
-        background: #fff;
+        background: none;
+        box-shadow: none;
         padding-left: 8px;
         padding-top: 10px;
     }
@@ -48,4 +54,94 @@ body{
     }
  
     
+}
+
+.calculation{
+    float: left;
+    margin-top: 30px;
+    margin-left: 50px;
+    padding:20px;
+
+    &__indicator{
+        border-bottom: 1px dotted rgb(148, 148, 148);
+        padding-bottom: 15px;
+        display: flex;
+
+        &-box{
+           
+            &--red{
+                height:20px;
+                width:20px;
+                background: red;
+                display: inline-block;
+                -moz-box-shadow:    inset 0 0 10px #fff;
+                -webkit-box-shadow: inset 0 0 10px #fff;
+                box-shadow:         inset 0 0 10px #fff;
+                border-radius: 5px;
+                margin: 0px 10px -5px 10px;
+            }
+
+            &--blue{
+                height:20px;
+                width:20px;
+                background: blue;
+                display: inline-block;
+                -moz-box-shadow:    inset 0 0 10px #fff;
+                -webkit-box-shadow: inset 0 0 10px #fff;
+                box-shadow:         inset 0 0 10px #fff;
+                border-radius: 5px;
+                margin: 0px 10px -5px 10px;
+            }
+
+            &--green{
+                height:20px;
+                width:20px;
+                background: green;
+                display: inline-block;
+                -moz-box-shadow:    inset 0 0 10px #fff;
+                -webkit-box-shadow: inset 0 0 10px #fff;
+                box-shadow:         inset 0 0 10px #fff;
+                border-radius: 5px;
+                margin: 0px 10px -5px 10px;
+            }
+        }
+    }   
+
+    &__table{
+        margin-top: 10px;
+        width: 400px;
+
+        thead{
+            background: rgb(240, 240, 240);
+            padding:5px;
+        }
+        th{
+            padding:10px 0px;
+            text-align: center;
+        }
+
+        tbody{
+           
+            text-align: center;
+
+        }
+
+        td{
+            padding: 5px;
+            border-bottom: 1px dotted rgb(148, 148, 148);;
+
+        }
+    }
+    &__button{
+        background: rgb(219, 64, 240);
+        padding: 15px;
+        color: #fff;
+        text-transform: uppercase;
+        margin-top: 20px;
+        cursor: pointer;
+
+        &--disable{
+            display: none
+        }
+    }
 }
